@@ -1,10 +1,11 @@
 from appium import webdriver
 from appium.webdriver.webdriver import WebDriver
 
+from PO_lianx.page.Basege import Basege
 from PO_lianx.page.main import MianPage
 
 
-class App:
+class App(Basege):
     driver: WebDriver
 
     def start(self):

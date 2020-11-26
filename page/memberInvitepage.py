@@ -1,6 +1,7 @@
-class MemberInvitepage:
-    def __init__(self, driver):
-        self.driver = driver
+from PO_lianx.page.Basege import Basege
+
+
+class MemberInvitepage(Basege):
 
     def add_member_menual(self):
         from PO_lianx.page.contactAddPage import ContactAddPage

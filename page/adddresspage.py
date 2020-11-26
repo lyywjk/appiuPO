@@ -1,9 +1,8 @@
+from PO_lianx.page.Basege import Basege
 from PO_lianx.page.memberInvitepage import MemberInvitepage
 
 
-class Addresslist:
-    def __init__(self, driver):
-        self.driver = driver
+class Addresslist(Basege):
 
     def click_addmember(self):
         self.driver.find_element_by_android_uiautomator(

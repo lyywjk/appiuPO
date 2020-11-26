@@ -1,9 +1,9 @@
 from time import sleep
 
+from PO_lianx.page.Basege import Basege
 
-class ContactAddPage:
-    def __init__(self, driver):
-        self.driver = driver
+
+class ContactAddPage(Basege):
 
     def edit_username(self, username):
         self.driver.find_element_by_xpath("//*[contains(@text,'姓名')]/../android.widget.EditText").send_keys(username)
